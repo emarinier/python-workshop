@@ -76,7 +76,7 @@ combined_2010_2021["Change"] = combined_2010_2021["Ladder 2021"] - combined_2010
 # Figure
 fig = px.choropleth(combined_2010_2021, locations="ISO3", locationmode="ISO-3",
                     color='Change',
-                    color_continuous_scale="RdBu_r",
+                    color_continuous_scale="Tealrose",
                     range_color=(-2, 2),
                     title="Change in World Happiness from 2010 to 2021",
                     labels={'Change':'Change'})

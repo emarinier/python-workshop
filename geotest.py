@@ -1,5 +1,4 @@
 import pandas as pd
-import json
 import plotly.express as px
 import math
 import matplotlib.pyplot as plt
@@ -7,10 +6,10 @@ import matplotlib.pyplot as plt
 pd.set_option('display.max_rows', 300)
 
 
-canada_vistors = pd.read_csv("Canada_visitors.csv")
+canada_visitors = pd.read_csv("Canada_visitors.csv")
 
 # Name fixes (matching codes names):
-canada_vistors["Country of residence"] = canada_vistors["Country of residence"].replace({"United States of America residents entering Canada": "United States",
+canada_visitors["Country of residence"] = canada_visitors["Country of residence"].replace({"United States of America residents entering Canada": "United States",
                                                                                          "South Africa, Republic of": "South Africa",
                                                                                          "Venezuela": "Venezuela, Bolivarian Rep. of",
                                                                                          "Libya": "Libyan Arab Jamahiriya",
@@ -27,7 +26,7 @@ canada_vistors["Country of residence"] = canada_vistors["Country of residence"].
 # others?
 
 
-monthly_visitors = canada_vistors[["Country of residence", "2022-05"]]
+monthly_visitors = canada_visitors[["Country of residence", "2022-05"]]
 monthly_visitors = monthly_visitors.rename(columns={"Country of residence": "Country", "2022-05": "Visitors"})
 #print(monthly_visitors)
 
@@ -51,7 +50,7 @@ counts = [
 ]
 
 ax.bar(regions, counts)
-ax.set_ylabel("Vistors")
+ax.set_ylabel("visitors")
 ax.set_title("May 2022 Visitors to Canada by Region")
 ax.set_yscale("log")
 plt.minorticks_off()
@@ -65,7 +64,7 @@ plt.close("all")
 fig, ax = plt.subplots()
 
 #Non-resident visitors entering Canada
-all_visitors = canada_vistors.loc[canada_vistors["Country of residence"] == "Non-resident visitors entering Canada"].fillna(0)
+all_visitors = canada_visitors.loc[canada_visitors["Country of residence"] == "Non-resident visitors entering Canada"].fillna(0)
 
 dates = all_visitors.columns.values[1:]
 visitors = all_visitors.values.tolist()[0][1:]

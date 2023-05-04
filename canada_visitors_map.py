@@ -41,6 +41,8 @@ monthly_visitors = monthly_visitors.to_frame()
 
 # Log scale as the US dominates:
 monthly_visitors["log(Visitors)"] = monthly_visitors.apply(lambda row : math.log(row["Visitors"], 10) if row["Visitors"] != 0 else 0, axis=1)
+# TODO: log visitors of specific month
+
 
 # Codes
 countries_codes = pd.read_csv("countries_codes.csv", sep=";", usecols=["ISO3 CODE", "LABEL EN"])
