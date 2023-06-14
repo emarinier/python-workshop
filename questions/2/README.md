@@ -6,6 +6,7 @@ Use pandas to read and manipulate the data, and Matplotlib to create the plot. Y
 
 - xlabel, ylabel, and title
 - The scale of the y-axis
+- The rotation of the x labels
 
 ## Resources
 
