@@ -37,6 +37,7 @@ def substitute(canada_visitors):
     canada_visitors = canada_visitors.set_index("Country")
 
     # ----------
+    # TODO:
     # North America is a special case.
     # Add a row that reflects visitors from North America.
     # ----------
@@ -63,6 +64,7 @@ canada_visitors = pd.read_csv(canada_visitors_filepath)
 canada_visitors = substitute(canada_visitors)
 
 # ----------
+# TODO:
 # Select a specific month (May 2022).
 # Create a list of regions.
 # Create a corresponding list of counts for each region.
@@ -73,6 +75,7 @@ plt.close("all")
 fig, ax = plt.subplots()
 
 # ----------
+# TODO:
 # Build the plot.
 # Modify the plot.
 # ----------

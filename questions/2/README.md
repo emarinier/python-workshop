@@ -11,6 +11,12 @@ Use pandas to read and manipulate the data, and Matplotlib to create the plot. Y
 
 - [Question Starting Point](canada_visitors_by_region.py)
 - [Visitors to Canada Data](../../data/Canada_visitors.csv)
+- [Pandas DataFrame Sum](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sum.html)
+- [Pandas Series to Frame](https://pandas.pydata.org/docs/reference/api/pandas.Series.to_frame.html)
+- [Pandas DataFrame Transpose](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.transpose.html)
+- [Pandas Concatinating DataFrames](https://pandas.pydata.org/docs/user_guide/merging.html)
+- [Matplotlib Bar Charts](https://matplotlib.org/stable/gallery/lines_bars_and_markers/bar_colors.html#sphx-glr-gallery-lines-bars-and-markers-bar-colors-py)
+- [Matplotlib Scale](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.yscale.html)
 
 ## Remarks on the Data
 
