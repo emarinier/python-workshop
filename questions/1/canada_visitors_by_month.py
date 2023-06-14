@@ -1,4 +1,6 @@
 """
+QUESTION 1: Number of Visitors Entering Canada by Month
+
 USAGE:
 
 python questions/1/canada_visitors_by_month.py data/Canada_visitors.csv
@@ -17,9 +19,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-# Check that the passed filepath exists:
+# Load the command line argument:
 canada_visitors_filepath = sys.argv[1]
 
+#  Check that the passed filepath exists:
 if not os.path.exists(canada_visitors_filepath):
     print("The passed filepath: " + str(canada_visitors_filepath) + " does not exist!")
     exit(1)
