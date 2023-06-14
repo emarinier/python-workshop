@@ -1,9 +1,36 @@
+"""
+QUESTION 2: Monthly Visitors Entering Canada by Region
+
+USAGE:
+
+python questions/2/canada_visitors_by_region.py data/Canada_visitors.csv
+
+OUTPUT:
+
+A PNG file named "canada_visitors_by_region.png" will be written to the
+current directory.
+
+"""
+
+import os
+import sys
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
-def substitutions(canada_visitors):
 
-    # Rename country column
+def substitute(canada_visitors):
+    """
+    Substitute troublesome entries in the "Canada_visitors.csv" data.
+
+    canada_visitors: A pandas DataFrame object that contains the loaded contents of
+                     the "Canada_visitors.csv" input file.
+    
+    Returns: A pandas DataFrame object with a corrected index and substitutions
+             correcting some entries in the data.
+    """
+
+    # Rename country column:
     canada_visitors = canada_visitors.rename(columns={"Country of residence": "Country"})
 
     # Set index:
@@ -21,8 +48,23 @@ def substitutions(canada_visitors):
     return canada_visitors
 
 
-canada_visitors = pd.read_csv("Canada_visitors.csv")
-canada_visitors = substitutions(canada_visitors)
+# ----
+# MAIN
+# ----
+
+# Load the command line argument:
+canada_visitors_filepath = sys.argv[1]
+
+#  Check that the passed filepath exists:
+if not os.path.exists(canada_visitors_filepath):
+    print("The passed filepath: " + str(canada_visitors_filepath) + " does not exist!")
+    exit(1)
+
+# Load the CSV file:
+canada_visitors = pd.read_csv(canada_visitors_filepath)
+
+# Make necessary substitutions in the data:
+canada_visitors = substitute(canada_visitors)
 
 # Select a specific month (May 2022):
 monthly_visitors = canada_visitors[["2022-05"]]
@@ -52,4 +94,4 @@ plt.xticks(rotation=45, ha='right')  # Rotates x-axis labels.
 plt.subplots_adjust(bottom=0.30)  # Makes room for x-axis labels.
 
 plt.savefig("canada_visitors_by_region.png")
-#plt.show()
+#plt.show()  # Useful for running on some systems.
