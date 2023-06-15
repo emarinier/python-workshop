@@ -6,8 +6,8 @@ Use pandas to read and manipulate the data, and plotly express choropleth to cre
 
 ## Resources
 
-- [Question Starting Point](canada_visitors_map.py)
-- [Visitors to Canada Data](../../data/Canada_visitors.csv)
+- [Question Starting Point](happiness.py)
+- [World Happiness Report 2021](../../data/world-happiness-report-2021.csv)
 - [Country Codes](../../data/countries_codes.csv)
 - [Pandas Replace (dict-like)](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.replace.html)
 - [Pandas Rename](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html)
