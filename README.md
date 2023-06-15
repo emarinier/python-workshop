@@ -29,3 +29,10 @@ You will then need to use pip to install the Python packages that will be used f
 3. [Question 3: Map of Monthly Visitors Entering Canada](questions/3/)
 4. [Question 4: Map of World Happiness](questions/4/)
 
+## Data
+
+All the data used in this workshop is made available in the `data` directory.
+
+## Solutions
+
+Possibile solutions are available in the `solutions` directory.
