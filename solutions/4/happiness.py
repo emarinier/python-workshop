@@ -10,7 +10,6 @@ OUTPUT:
 A PNG file named "happiness-2021.png" and an interactable HTML
 file named "happiness-2021.html" will be written to the current
 directory.
-
 """
 
 import os
