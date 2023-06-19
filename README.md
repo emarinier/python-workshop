@@ -1,5 +1,7 @@
 # Python Workshop
 
+![Map of World Happiness](solutions/4/happiness.png)
+
 ## Setup
 
 You will need to confirm that Python (ideally Python 3+) and pip are installed:
