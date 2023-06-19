@@ -1,5 +1,7 @@
 # Question 2: Monthly Visitors Entering Canada by Region
 
+![Monthly Visitors Entering Canada by Region](../../solutions/2/canada_visitors_by_region.png)
+
 Create a plot showing the number of non-resident visitors entering Canada by region (North America, South America, Europe, Africa, Asia, Oceania, Antarctica) for the month of May 2022. Which region has the most visitors entering Canada and which has the least?
 
 Use pandas to read and manipulate the data, and Matplotlib to create the plot. You may wish to modify the following elements of the plot:

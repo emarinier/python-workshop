@@ -1,5 +1,7 @@
 # Question 4: Map of World Happiness
 
+![Map of World Happiness](../../solutions/4/happiness.png)
+
 Create a map showing the world happiness index ("Life Ladder" / "Ladder Score") for each country in 2021. Considering that the data collection is somewhat delayed, are there any observations that you can make?
 
 Use pandas to read and manipulate the data, and plotly express choropleth to create the map.

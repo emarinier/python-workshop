@@ -1,5 +1,7 @@
 # Question 3: Map of Monthly Visitors Entering Canada
 
+![Map of Monthly Visitors Entering Canada](../../solutions/3/canada_visitors_map.png)
+
 Create a map showing the number of non-resident visitors entering Canada from each country for the month of May 2022. What observations can you make?
 
 Use pandas to read and manipulate the data, and plotly express choropleth to create the map.

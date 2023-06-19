@@ -1,5 +1,7 @@
 # Question 1: Number of Visitors Entering Canada by Month
 
+![Number of Visitors Entering Canada by Month](../../solutions/1/canada_visitors_by_month.png)
+
 Create a plot showing the number of non-resident visitors entering Canada each month. Are there any trends that can be observed? What effect did the COVID-19 pandemic have on the number of visitors?
 
 Use pandas to read and manipulate the data, and Matplotlib to create the plot. You may wish to modify the following elements of the plot:
