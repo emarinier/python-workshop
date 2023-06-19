@@ -26,4 +26,4 @@ Use pandas to read and manipulate the data, and Matplotlib to create the plot. Y
 - North America is comprised of two separate entries that will need to be combined:
   - "North America, countries other than the United States of America"
   - "United States of America residents entering Canada"
-- There are many NA values in the data.
+- There are many missing values in the data.

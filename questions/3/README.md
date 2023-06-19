@@ -24,4 +24,4 @@ Use pandas to read and manipulate the data, and plotly express choropleth to cre
   - "United States of America residents entering Canada" -> "United States"
   - "South Africa, Republic of" -> "South Africa"
   - And many more.
-- There are many NA values in the data.
+- There are many missing values in the data.

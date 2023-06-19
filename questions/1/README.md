@@ -20,4 +20,4 @@ Use pandas to read and manipulate the data, and Matplotlib to create the plot. Y
 ## Remarks on the Data
 
 - "Non-resident visitors entering Canada" is the row of interest.
-- There are many NA values in the data.
+- There are many missing values in the data.
