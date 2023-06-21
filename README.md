@@ -38,3 +38,8 @@ All the data used in this workshop is made available in the `data` directory.
 ## Solutions
 
 Possibile solutions are available in the `solutions` directory.
+
+## Slides
+
+- [Slides](https://docs.google.com/presentation/d/18yWXHS__BtQOY1yot1vHoakMXveQ3-dvCQwzQ8bEptI/edit?usp=sharing)
+
